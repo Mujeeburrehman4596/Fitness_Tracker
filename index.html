@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Fitness Tracker</a>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- Workout Entry Form -->
+        <h3 class="mb-4">Log Workout</h3>
+        <form id="workout-form">
+            <div class="form-group">
+                <label for="exercise-name">Exercise Name</label>
+                <input type="text" class="form-control" id="exercise-name" required>
+            </div>
+            <div class="form-group">
+                <label for="exercise-duration">Duration (minutes)</label>
+                <input type="number" class="form-control" id="exercise-duration" required>
+            </div>
+            <div class="form-group">
+                <label for="exercise-calories">Calories Burned</label>
+                <input type="number" class="form-control" id="exercise-calories" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Workout</button>
+        </form>
+
+        <!-- Fitness Goals Form -->
+        <div class="mt-4">
+            <h3 class="mb-4">Set Fitness Goals</h3>
+            <form id="goals-form">
+                <div class="form-group">
+                    <label for="goal-steps">Daily Steps Goal</label>
+                    <input type="number" class="form-control" id="goal-steps" required>
+                </div>
+                <div class="form-group">
+                    <label for="goal-calories">Daily Calories Burned Goal</label>
+                    <input type="number" class="form-control" id="goal-calories" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Set Goals</button>
+            </form>
+        </div>
+
+        <!-- Workout History and Stats -->
+        <div class="mt-4">
+            <h3 class="mb-4">Workout History</h3>
+            <ul class="list-group" id="workout-list"></ul>
+
+            <div id="performance-stats" class="mt-4">
+                <!-- Performance stats will be rendered here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Fitness Tracker. All rights reserved.</p>
+            <p class="mb-0">Developed by Mujeeb Ur Rehman.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
